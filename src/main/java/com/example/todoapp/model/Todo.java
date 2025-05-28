@@ -18,5 +18,6 @@ public class Todo {
     private Long id;
     @Column(nullable = false , unique = true )
     private String title;
-    private Boolean completed;
+    @Column(nullable = false, columnDefinition = "TINYINT(1) DEFAULT 0")
+    private Boolean completed = false; // Keep this for Java object initialization
 }
