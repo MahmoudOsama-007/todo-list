@@ -2,6 +2,9 @@
 
 A simple, modern web-based To-Do List application built with Spring Boot, Thymeleaf, and MySQL. The app allows users to add, complete, and delete tasks with a clean, responsive UI.
 
+## Screenshots
+![demo](img/demo.png)
+
 ## Features
 - Add new tasks
 - Mark tasks as completed/uncompleted
@@ -90,8 +93,3 @@ A simple, modern web-based To-Do List application built with Spring Boot, Thymel
 - The app uses Bootstrap 5 and a custom CSS theme for a clean, modern look.
 - All UI is rendered server-side with Thymeleaf.
 
-## Screenshots
-![Screenshot](Screenshot%202025-05-27%20121044.png)
-
-## License
-This project is for demo/educational purposes. 
