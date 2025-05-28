@@ -2,7 +2,7 @@
     font-family: "Urbanist", sans-serif;
 }
 body{
-    /*background-color: #111;*/
+    background-color: #111;
 }
 .todo-container{
     max-width: 400px;
@@ -47,7 +47,7 @@ body{
     justify-content: space-between;
     padding: 5px 0;
 }
-.tod-text{
+.todo-text{
     flex-grow: 1;
     margin-left:10px;
 }
