@@ -19,7 +19,7 @@
         <h4>
             <i class="bi bi-calendar-check"></i> To-Do List
         </h4>
-        <form class="d-flex mb-4 mt-4">
+        <form class="d-flex mb-4 mt-4" th:action="@{/add}" method="post">
             <input type="text" name="title" class="form-control todo-input" placeholder="Add your task" required >
             <button class="btn btn-add">ADD<span>+</span></button>
         </form>
@@ -28,12 +28,12 @@
         </div>
         <div th:each="todo: ${todos}" class="todo-item">
             <div class="d-flex align-items-center">
-                <a href="#">
+                <a th:href="@{/update/{id}(id=${todo.id})}">
                     <i class="bi" th:classappend="${todo.completed}? 'bi-check-circle-fill check-icon':'bi-circle unchecked-icon'"></i>
                 </a>
                 <span th:text="${todo.title}" th:classappend="${todo.completed}?'completed': ''" class="todo-text"></span>
             </div>
-            <a href="#" class="delete-btn">
+            <a th:href="@{/delete/{id}(id=${todo.id})}" class="delete-btn">
                 <i class="bi bi-trash"></i>
             </a>
         </div>
